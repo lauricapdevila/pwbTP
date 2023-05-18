@@ -12,7 +12,7 @@ export const postClientes = async(req,res) =>{
     res.json(cliente)
 }
 
-//Editar Cliente
+//Editar Cliente, es lo que faltó en el código original
 export const putClientes = async(req,res) =>{
     const {cedula,nombre,apellido} = req.body
     const {id} = req.params
@@ -21,7 +21,7 @@ export const putClientes = async(req,res) =>{
 }
 
 
-//delete clientes
+//delete clientes, es lo que faltó en el código original
 export const deleteClientes = async(req,res) =>{
     const {id} = req.params
     const cliente = await Cliente.destroy({where: {id}})
